@@ -6,7 +6,7 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 
 include ('connection.php');
 
-$Address = isset($_POST["selectAddress"]) ? $_POST["selectAddress"]: "";
+$Address = isset($_POST["selectAddress"]) ? $_POST["selectAddress"]: "123";
 
 $sql = "SELECT * FROM `user` WHERE `Address` = '$Address'";
 $result = mysqli_query($connect, $sql);
