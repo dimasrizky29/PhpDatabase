@@ -1,4 +1,10 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Credentials: true");
+header("Access-Control-Max-Age: 1000");
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+
 include ('connection.php');
 
 //if (isset($_POST["editAddress"]) && isset($_POST["editUsername"]) && isset($_POST["editLobby"])&& isset($_POST["editRoom"]) : "else");
