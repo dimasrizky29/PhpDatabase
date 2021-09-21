@@ -8,11 +8,9 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 include ('connection.php');
 
 //if (isset($_POST["editAddress"]) && isset($_POST["editUsername"]) && isset($_POST["editLobby"])&& isset($_POST["editRoom"]) : "else");
+$Status = $_POST["editStatus"];
 
-$Address = $_POST["editAddress"];
-$Status = "On Progress";
-
-$whereCondition = isset($_POST["whereCondition"]) ? $_POST["whereCondition"]: "";
+$whereCondition = $_POST["whereCondition"];
 //print_r($_POST);
 
 $sql = "UPDATE `withdraw` SET `Status` = '$Status' WHERE `withdraw`.`Address` = '$whereCondition'"; 

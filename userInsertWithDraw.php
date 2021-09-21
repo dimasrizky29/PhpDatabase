@@ -10,7 +10,7 @@ include ('connection.php');
 $Address = $_POST["addAddress"];
 $Date = isset($_POST["addDate"]) ? $_POST["addDate"]: "";
 $GamePlayed = isset($_POST["addGamePlayed"]) ? $_POST["addGamePlayed"]: "";
-$Status = "Claim First";
+$Status = isset($_POST["addStatus"]) ? $_POST["addStatus"]: "";
 $Balance = isset($_POST["addBalance"]) ? $_POST["addBalance"]: "";
 //print_r($_POST);
 

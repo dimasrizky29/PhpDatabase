@@ -6,7 +6,7 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 
 include ('connection.php');
 
-$Address = isset($_POST["selectAddress"]) ? $_POST["selectAddress"]: "";
+$Address = $_POST["selectAddress"];
 
 $sql = "SELECT * FROM `withdraw` WHERE `Address` = '$Address'";
 $result = mysqli_query($connect, $sql);
